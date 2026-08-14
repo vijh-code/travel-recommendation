@@ -11,7 +11,7 @@
           },
           {
             "name": "Melbourne, Australia",
-            "imageUrl": "images/sydney-hero.png",
+            "imageUrl": "images/melbourne.png",
             "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
           }
         ]
@@ -22,7 +22,7 @@
         "cities": [
           {
             "name": "Tokyo, Japan",
-            "imageUrl": "images/sydney-hero.png",
+            "imageUrl": "images/tokyo.png",
             "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
           },
           {
@@ -38,12 +38,12 @@
         "cities": [
           {
             "name": "Rio de Janeiro, Brazil",
-            "imageUrl": "images/sydney-hero.png",
+            "imageUrl": "images/rio-de-janeiro.png",
             "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
           },
           {
             "name": "São Paulo, Brazil",
-            "imageUrl": "images/sydney-hero.png",
+            "imageUrl": "images/sao-paulo.png",
             "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
           }
         ]
