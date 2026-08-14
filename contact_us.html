@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Travel Recommendation team.">
+    <title>Contact Us | Travel Recommendation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background:
+                linear-gradient(rgba(3, 24, 34, 0.75), rgba(3, 24, 34, 0.75)),
+                url("images/sydney-hero.png") center / cover fixed no-repeat;
+        }
+
+        header {
+            padding: 1.25rem 6%;
+            background: rgba(5, 28, 39, 0.9);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus,
+        nav a[aria-current="page"] {
+            color: #72e0d1;
+        }
+
+        main {
+            display: grid;
+            min-height: calc(100vh - 65px);
+            grid-template-columns: 1fr minmax(320px, 560px);
+            gap: 4rem;
+            align-items: center;
+            width: min(1100px, 88%);
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        .contact-intro h1 {
+            margin: 0 0 1rem;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .contact-intro p {
+            max-width: 480px;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 0.75rem;
+            padding: 2rem;
+            border-radius: 0.6rem;
+            background: rgba(5, 28, 39, 0.86);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-form label {
+            font-weight: 700;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            margin-bottom: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 0.3rem;
+            padding: 0.85rem;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.12);
+            font: inherit;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.72);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: 3px solid #72e0d1;
+            outline-offset: 2px;
+        }
+
+        .contact-form textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            border: 0;
+            border-radius: 0.3rem;
+            padding: 0.9rem 1.25rem;
+            color: #ffffff;
+            background: #087f8c;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover,
+        .contact-form button:focus {
+            background: #0a9ba8;
+        }
+
+        @media (max-width: 760px) {
+            main {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html" aria-current="page">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-intro" aria-labelledby="contact-title">
+            <h1 id="contact-title">Contact Us</h1>
+            <p>
+                Have a question or need help planning your next adventure? Send us a
+                message and our travel team will be happy to help.
+            </p>
+        </section>
+
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

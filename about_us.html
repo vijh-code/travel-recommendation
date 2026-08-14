@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the team behind Travel Recommendation.">
+    <title>About Us | Travel Recommendation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background:
+                linear-gradient(rgba(3, 24, 34, 0.78), rgba(3, 24, 34, 0.78)),
+                url("images/sydney-hero.png") center / cover fixed no-repeat;
+        }
+
+        header {
+            padding: 1.25rem 6%;
+            background: rgba(5, 28, 39, 0.9);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus,
+        nav a[aria-current="page"] {
+            color: #72e0d1;
+        }
+
+        main {
+            width: min(1100px, 88%);
+            margin: 0 auto;
+            padding: 5rem 0;
+        }
+
+        h1 {
+            margin: 0 0 1.5rem;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            text-transform: uppercase;
+        }
+
+        .company-info {
+            max-width: 900px;
+            padding: 1.5rem;
+            border-left: 5px solid #72e0d1;
+            background: rgba(5, 28, 39, 0.72);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .team-section {
+            margin-top: 4rem;
+        }
+
+        .team-section h2 {
+            font-size: 2.5rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .team-member {
+            padding: 1.75rem;
+            border-radius: 0.5rem;
+            background: rgba(5, 28, 39, 0.82);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        .team-member h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        .team-member p {
+            margin: 0;
+            color: #72e0d1;
+            font-weight: 700;
+        }
+
+        footer {
+            padding: 1rem;
+            text-align: center;
+            background: rgba(5, 28, 39, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about_us.html" aria-current="page">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="about-title">
+            <h1 id="about-title">About Us</h1>
+            <div class="company-info">
+                <p>
+                    Welcome to Travel Recommendation! We are a passionate travel company
+                    dedicated to helping people discover remarkable destinations around the
+                    world. Our goal is to make planning a memorable trip simple, inspiring,
+                    and enjoyable.
+                </p>
+                <p>
+                    We combine local insights with carefully selected recommendations so
+                    every traveller can find experiences that match their interests. Whether
+                    you are searching for a relaxing beach, a cultural city break, or a new
+                    adventure, our team is here to help you choose your next destination.
+                </p>
+            </div>
+        </section>
+
+        <section class="team-section" aria-labelledby="team-title">
+            <h2 id="team-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <article class="team-member">
+                    <h3>Jordan Lee</h3>
+                    <p>Chief Executive Officer</p>
+                </article>
+                <article class="team-member">
+                    <h3>Priya Sharma</h3>
+                    <p>Travel Experience Manager</p>
+                </article>
+                <article class="team-member">
+                    <h3>Alex Morgan</h3>
+                    <p>Lead Developer</p>
+                </article>
+                <article class="team-member">
+                    <h3>Sofia Martinez</h3>
+                    <p>Customer Relations Lead</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Travel Recommendation</p>
+    </footer>
+</body>
+</html>
